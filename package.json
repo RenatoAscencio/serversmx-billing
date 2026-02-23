@@ -17,6 +17,7 @@
         "vite": "^7.1"
     },
     "dependencies": {
-        "@alpinejs/anchor": "^3.15.3"
+        "@alpinejs/anchor": "^3.15.3",
+        "@tailwindcss/cli": "^4.2.1"
     }
 }

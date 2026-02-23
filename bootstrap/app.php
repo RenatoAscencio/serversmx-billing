@@ -22,6 +22,7 @@ return Application::configure(basePath: dirname(__DIR__))
         // channels: __DIR__.'/../routes/channels.php',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        $middleware->trustProxies(at: '*');
         $middleware->append(ProxyMiddleware::class);
         $middleware->alias([
             'has' => EnsureUserHasPermissions::class,
